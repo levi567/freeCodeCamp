@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Landing Page - Fitness4All</title>
+   <link rel="stylesheet" href="styles.css">
+   <script src="https://kit.fontawesome.com/57819552f8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <header id="header">
+      <a href="index.html">
+         <div id="logo">
+            <img src="https://res.cloudinary.com/dgfuhwcs0/image/upload/f_auto,q_auto/yp2j1i0iyjy2xaojxmhi" alt="Logo" id="header-img">
+            <div id="logo-text">
+               <p>FITNESS</p>
+               <hr>
+               <p>4ALL</p>
+            </div>
+         </div>
+      </a>
+      <nav id="nav-bar">
+         <ul>
+            <li><a href="#features" class="nav-link">Features</a></li>
+            <li><a href="#pricing" class="nav-link">Pricing</a></li>
+            <li><a href="#form" class="nav-link">Join Now</a></li>
+         </ul>
+      </nav>
+   </header>
+   <main id="main">
+      <section id="hero">
+         <h1 id="hero-heading">Transform Your Body Today!</h1>
+         <h3 id="hero-subheading">submit the best gym with expert trainers & 24/7 access</h3>
+         <iframe id="video" src="https://youtube.com/embed/4-zjQvTDnbw?playlist=4-zjQvTDnbw&autoplay=1&mute=1&loop=1" frameborder="0"></iframe>
+         <a href="#form"><button type="button" id="call-to-action">Join Now</button></a>
+      </section>
+      <section id="features">
+         <div class="feature">
+            <div class="feature-heading">
+               <i class="fa-solid fa-clock"></i>
+               <h2 class="feature-title">24/7 Gym Access</h2>
+            </div>
+            <p class="feature-subtitle">Never having to stress about gym hours again</p>  
+         </div>
+         <div class="feature">
+            <div class="feature-heading">
+               <i class="fa-solid fa-dumbbell"></i>
+               <h2 class="feature-title">Personal Training</h2>
+            </div>
+            <p class="feature-subtitle">We have expert trainers to help you reach your goals</p>
+         </div>
+         <div class="feature">
+            <div class="feature-heading">
+               <i class="fa-solid fa-utensils"></i>
+               <h2 class="feature-title">Nutrition Guidance</h2>
+            </div>
+            <p class="feature-subtitle">Our professionals will help you create a personalized meal plan</p>
+         </div>
+      </section>
+      <section id="pricing">
+         <h1 id="pricing-title">Start your fitness journey today!</h1>
+         <h2 id="pricing-subtitle">Choose the perfect plan and unlock exclusive benefits!</h2>
+         <div id="membership">
+            <div class="tier">
+               <h2 class="tier-title">Basic</h2>
+               <p class="price">$19.99/Month</p>
+               <ul class="feature-list">
+                  <li>24/7 Gym Access</li>
+                  <li>Standard Equipment</li>
+                  <li>Locker Room Access</li>
+               </ul>
+               <button type="button" class="tier-button">Select</button>
+            </div>
+            <div class="tier">
+               <h2 class="tier-title">Standard</h2>
+               <p class="price">$39.99/Month</p>
+               <ul class="feature-list">
+                  <li>All Basic Features</li>
+                  <li>Group Fitness Classes</li>
+                  <li>Sauna & Steam Room</li>
+                  <li>Free Wi-Fi</li>
+               </ul>
+               <button type="button" class="tier-button">Select</button>
+            </div>
+            <div class="tier">
+               <h2 class="tier-title">Premium</h2>
+               <p class="price">$69.99/Month</p>
+               <ul class="feature-list">
+                  <li>All Standard Features</li>
+                  <li>Personal Training Sessions</li>
+                  <li>Premium Equipment</li>
+                  <li>Nutrition Consultation</li>
+                  <li>VIP Lounge Access</li>
+               </ul>
+               <button type="button" class="tier-button">Select</button>
+            </div>
+         </div>
+      </section>
+   </main>
+   <footer id="footer">
+      <form id="form" method="post" action="https://www.freecodecamp.com/email-submit">
+         <input class="form-input" id="name" type="name" name="name" placeholder="Enter your name">
+         <input class="form-input" id="email" type="email" name="email" placeholder="Enter your email">
+         <input class="form-input" id="submit" type="submit" value="Join Now" />
+      </form>
+   </footer>
+</body>
+</html>

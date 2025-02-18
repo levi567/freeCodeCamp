@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>CSS and HTML Documentation</title>
+  </head>
+  <body>
+   <nav id="navbar">
+      <header id="title">CSS and HTML Documentation</header>
+      <ul>
+         <li><a class="nav-link" href="#introduction_to_html_and_css">Introduction to HTML and CSS</a></li>
+         <li><a class="nav-link" href="#basic_html_structure">Basic HTML Structure</a></li>
+         <li><a class="nav-link" href="#css_basics">CSS Basics</a></li>
+         <li><a class="nav-link" href="#layout_techniques">Layout Techniques</a></li>
+         <li><a class="nav-link" href="#responsive_design">Responsive Design</a></li>
+         <li><a class="nav-link" href="#forms_in_html">Forms in HTML</a></li>
+         <li><a class="nav-link" href="#styling_forms_with_css">Styling Forms with CSS</a></li>
+         <li><a class="nav-link" href="#typography_in_css">Typography in CSS</a></li>
+         <li><a class="nav-link" href="#colors_and_backgrounds">Colors and Backgrounds</a></li>
+         <li><a class="nav-link" href="#box_model">Box Model</a></li>
+         <li><a class="nav-link" href="#references">References</a></li>
+      </ul>
+   </nav>
+    <main id="main-doc">
+      <section id="introduction_to_html_and_css" class="main-section">
+        <header>Introduction to HTML and CSS</header>
+        <p>HTML (HyperText Markup Language) and CSS (Cascading Style Sheets) are fundamental technologies for structuring and styling web pages.</p>
+        <ul>
+         <li><b>HTML</b> provides the foundational elements of a webpage, defining its content and structure.</li>
+         <li><b>CSS</b> controls the presentation of the webpage, allowing customization of layouts, colors, fonts, and responsiveness.</li>
+        </ul>
+        <p>Together, they create visually appealing and functional web experiences that work across different devices and screen sizes.</p>
+      </section>
+      <section id="basic_html_structure" class="main-section">
+        <header>Basic HTML Structure</header>
+        <p>An HTML document consists of elements organized hierarchically to define a webpage’s content.</p>
+        <h2>Key Elements:</h2>
+        <ul>
+         <li><code>&lt!DOCTYPE html&gt</code>: Specifies the document type and version of HTML (usually HTML5).</li>
+         <li><code>&lthtml&gt</code>: The root element encompassing all content.</li>
+         <li><code>&lthead&gt</code>: Contains metadata, including character encoding, viewport settings, and external CSS or scripts.</li>
+         <li><code>&lttitle&gt</code>: Defines the text displayed on the browser tab.</li>
+         <li><code>&ltbody&gt</code>: Holds all visible content such as text, images, and links.</li>
+         <li>Semantic elements like <code>&ltheader&gt</code>, <code>&ltfooter&gt</code>, and <code>&ltarticle&gt</code> provide meaningful structure to improve readability and accessibility.</li>
+        </ul>
+        <div class="code-paragraph"></div>
+      </section>
+      <section id="css_basics" class="main-section">
+        <header>CSS Basics</header>
+        <p>CSS (Cascading Style Sheets) is used to control the appearance of HTML elements, ensuring consistency in design and layout.</p>
+        <h2>Selectors and Properties</h2>
+        <ul>
+         <li><b>Selectors</b> define which HTML elements the CSS rules apply to.</li>
+         <li><b>Properties</b> specify the styling rules, such as font size, color, and margin.</li>
+        </ul>
+        <h2>Common Selectors</h2>
+        <ul>
+         <li><b>Element Selector</b> (<code><b>element</b></code>****): Targets all instances of a specific HTML element.</li>
+         <li><b>Class Selector</b>(<code><b>.classname</b></code>****): Targets elements with a specific class.</li>
+         <li><b>ID Selector</b> (<code><b>#id</b></code>****): Targets a unique element by its ID.</li>
+         <li><b>Attribute Selector</b> (<code><b>[attribute]</b></code>****): Targets a unique element by its ID.</li>
+         <li><b>Pseudo-classes</b> (<code><b>:hover</b></code>****, <code><b>:focus</b></code>): Apply styles when an element is in a specific state.</li>
+        </ul>
+        <div class="code-paragraph"></div>
+      </section>
+      <section id="layout_techniques" class="main-section">
+        <header>Layout Techniques</header>
+        <h2>Flexbox</h2>
+        <p>Flexbox is a one-dimensional layout system that helps in distributing space efficiently among items.</p>
+        <ul>
+         <li><code>display: flex;</code> enables a flexible contianer.</li>
+         <li><code>justify-content</code> controls horizontal alignment.</li>
+         <li><code>align-items</code> manages vertical alignment.</li>
+        </ul>
+        <div class="code-paragraph"></div>
+        <h2>Grid Layout</h2>
+        <p>CSS Grid provides a two-dimensional layout model for web design.</p>
+        <ul>
+         <li><code>display: grid;</code> activates a grid container.</li>
+         <li><code>grid-template-columns</code> and <code>grid-template-rows</code> define the structure of the grid.</li>
+         <li><code>gap</code> specifies spacing between grid items.</li>
+        </ul>
+        <div class="code-paragraph"></div>
+      </section>
+      <section id="responsive_design" class="main-section">
+        <header>Responsive Design</header>
+        <p>Responsive design ensures that a webpage adapts to different screen sizes and devices.</p>
+        <h2>Media Queries</h2>
+        <p>Media queries apply different styles based on screen size conditions.</p>
+        <ul>
+         <li><code>@media (max-width: 600px) {}</code> targets screens smaller than 600 pixels.</li>
+         <li><code>@media (min-width: 768px) and (max-width: 1024px) {}</code> applies style for tablets.</li>
+        </ul>
+        <div class="code-paragraph"></div>
+      </section>
+      <section id="forms_in_html" class="main-section">
+         <header>Forms in HTML</header>
+         <p>Forms allow users to input data and interact with websites.</p>
+         <h2>Key Elements:</h2>
+         <ul>
+            <li><code>&ltform&gt</code>: Defines the form</li>
+            <li><code>&ltlabel&gt</code>: Provides a description for input fields.</li>
+            <li><code>&ltinput&gt</code>: Accepts user input (text, email, password, etc.).</li>
+            <li><code>&lttextarea&gt</code>: Allows multiline text input.</li>
+            <li><code>&ltbutton&gt</code>: Triggers form submission.</li>
+            <li><code>&ltselect&gt</code>: Creates dropdown menus.</li>
+         </ul>
+         <div class="code-paragraph"</div>
+       </section>
+       <section id="styling_forms_with_css" class="main-section">
+         <header>Styling Forms with CSS</header>
+         <p>Styling enhances form usability and appearance.</p>
+         <h2>Important CSS Properties</h2>
+         <ul>
+            <li><code>padding</code> creates spacing inside input fields.</li>
+            <li><code>border</code> defines input field boundaries.</li>
+            <li><code>border-radius</code> adds rounded corners.</li>
+            <li><code>background-color</code> modifies button backgrounds.</li>
+            <li><code>cursor: pointer;</code> changes the cursor to indicate clickable elements.</li>
+         </ul>
+         <div class="code-paragraph"></div>
+       </section>
+       <section id="typography_in_css" class="main-section">
+         <header>Typography in CSS</header>
+         <p>typography_in_css affects readability and aesthetics.</p>
+         <h2>Key Properties</h2>
+         <ul>
+            <li><code>font-family</code> defines the typeface.</li>
+            <li><code>font-size</code> controls text size.</li>
+            <li><code>font-weight</code> adjusts thickness (bold, normal, light).</li>
+            <li><code>line-height</code> determines vertical spacing between lines.</li>
+            <li><code>letter-spacing</code> modifies spacing between cahracters.</li>
+         </ul>
+         <div class="code-paragraph"></div>
+       </section>
+       <section id="colors_and_backgrounds" class="main-section">
+         <header>Colors and Backgrounds</header>
+         <p>CSS provides control over text, background, and gradient colors.</p>
+         <h2>Essential Properties:</h2>
+         <ul>
+            <li><code>color</code> changes text-color.</li>
+            <li><code>background-color</code> sets a solid background.</li>
+            <li><code>background-image</code> applies images as backgrounds.</li>
+            <li><code>opacity</code> controls transparency.</li>
+            <li><code>gradient</code> effects create smooth transitions between colors.</li>
+         </ul>
+         <div class="code-paragraph"></div>
+       </section>
+       <section id="box_model" class="main-section">
+         <header>Box Model</header>
+         <p>The box model explains how elements are sized and spaced.</p>
+         <h2>Components:</h2>
+         <ul>
+            <li><b>Content</b>: The area containing text or images.</li>
+            <li><b>Padding</b>: The space inside the border.</li>
+            <li><b>Border</b>: The element's outer edge.</li>
+            <li><b>Margin</b>: The space outside the border seperating elements.</li>
+         </ul>
+         <div class="code-paragraph"></div>
+       </section>
+       <section id="references" class="main-section">
+         <header>References</header>
+         <p>This documentation is based on information from the following sources:</p>
+         <ul>
+            <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></li>
+            <li><a href="https://www.w3.org/" target="_blank">W3C HTML & CSS Specifications</a></li>
+            <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a></li>
+         </ul>
+       </section>
+    </main>
+  </body>
+</html>

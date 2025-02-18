@@ -1,0 +1,265 @@
+* {
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+}
+
+body {
+   background: #fafafa;
+   color: #080808;
+   font-family: sans-serif;
+   padding: 0;
+   margin: 0;
+}
+
+header {
+   font-size: 25px;
+   margin-bottom: -5px;
+}
+
+h2 {
+   font-size: 20px;
+   margin-bottom: -10px;
+}
+
+code {
+   font-family: Courier New;
+   background: #e2e2e2;
+   padding: 2.5px;
+   letter-spacing: .9px;
+}
+
+.main-section:first-of-type {
+   padding: 30px 0;
+}
+
+.main-section {
+   padding: 15px 0;
+   width: 75%;
+}
+
+.code-paragraph {
+   font-family: Courier New;
+   background: #e2e2e2;
+   width: 100%;
+   padding: 10px;
+   line-height: 1.5;
+}
+
+.nav-link {
+   text-decoration: none;
+   color: #080808;
+   width: 100%;
+   display: block;
+   padding: 20px 0 20px 40px;
+}
+
+#navbar ul {
+   list-style: none;
+}
+
+#navbar ul li {
+   border-top: 1px solid #080808;
+   margin-left: -40px;
+}
+
+.nav-link:hover {
+   background: #e2e2e2;
+   cursor: pointer;
+}
+
+#title {
+   text-align: center;
+   font-size: 25px;
+   padding: 10px 10px 0 10px;
+}
+
+#navbar {
+   max-width: 100%;
+   width: 300px;
+   border-right: 3px solid #080808;
+   height: 100vh;
+   position: fixed;
+   display: block;
+   overflow: auto;
+   background: #fafafa;
+}
+
+#main-doc {
+   /* max-width: 56.7%;
+   width: 1000px; */
+   /* position: absolute; */
+   /* left: 350px; */
+   /* padding-top: 50px; */
+   line-height: 2;
+   /* display: block; */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+   height: 100vh;
+   margin-left: 300px;
+}
+
+#basic_html_structure .code-paragraph::after {
+content: "<!DOCTYPE html>\A
+   <html>\A
+   <head>\A
+      <title>My Webpage</title>\A
+   </head>\A
+   <body>\A
+      <h1>Welcome to My Website</h1>\A
+      <p>This is a paragraph.</p>\A
+   </body>\A
+   </html>";
+   white-space: pre-wrap;
+}
+
+#css_basics .code-paragraph::after {
+   content: "body {\A
+    background-color: lightgray;\A
+}\A
+\A
+h1 {\A
+    color: blue;\A
+    font-size: 24px;\A
+}";
+   white-space: pre-wrap;
+}
+
+#layout_techniques .code-paragraph::after {
+   content: ".container {\A
+    display: flex;\A
+    justify-content: center;\A
+    align-items: center;\A
+}";
+   white-space: pre-wrap;
+}
+
+#layout_techniques .code-paragraph::after {
+   content: ".grid-container {\A
+    display: grid;\A
+    grid-template-columns: repeat(3, 1fr);\A
+    gap: 10px;\A
+}";
+   white-space: pre-wrap;
+}
+
+#responsive_design .code-paragraph::after {
+   content: "@media (max-width: 600px) {\A
+    body {\A
+        background-color: lightblue;\A
+    }\A
+}";
+   white-space: pre-wrap;
+}
+
+#forms_in_html .code-paragraph::after {
+   content: "<form>\A
+    <label for=\"name\">Name:</label>\A
+    <input type=\"text\" id=\"name\" name=\"name\">\A
+    <button type=\"submit\">Submit</button>\A
+</form>";
+   white-space: pre-wrap;
+}
+
+#styling_forms_with_css .code-paragraph::after {
+   content: "input {\A
+    padding: 10px;\A
+    border: 1px solid gray;\A
+    border-radius: 5px;\A
+}";
+   white-space: pre-wrap;
+}
+
+#typography_in_css .code-paragraph::after {
+   content: "p {\A
+    font-family: Arial, sans-serif;\A
+    font-size: 16px;\A
+}";
+   white-space: pre-wrap;
+}
+
+#colors_and_backgrounds .code-paragraph::after {
+   content: "body {\A
+      background: linear-gradient(to right, red, blue);\A
+  }";
+   white-space: pre-wrap;
+}
+
+#box_model .code-paragraph::after {
+   content: "div {\A
+    padding: 10px;\A
+    margin: 20px;\A
+    border: 2px solid black;\A
+}";
+   white-space: pre-wrap;
+}
+
+#references a {
+   text-decoration: none;
+}
+
+@media (max-width: 1045px) {
+   #navbar {
+      display: none;
+      position: static;
+   }
+
+   #main-doc {
+      margin-left: 0;
+   } 
+  
+   body {
+      font-size: .85rem;
+   }
+   
+   header {
+      font-size: 1.5rem;
+   }
+
+   h2 {
+      font-size: 1.2rem;
+   }
+}
+
+@media (max-width: 630px) and (min-width: 433px) {
+   body {
+      font-size: .7rem;
+   }
+
+   header {
+      font-size: 1.35rem;
+   }
+
+   h2 {
+      font-size: 1.05rem;
+   }
+}
+
+@media (max-width: 433px) and (min-width: 356px) {
+   body {
+      font-size: .6rem;
+   }
+
+   header {
+      font-size: 1.25rem;
+   }
+
+   h2 {
+      font-size: .95rem;
+   }
+}
+
+@media (max-width: 356px) {
+   body {
+      font-size: .6rem;
+   }
+
+   header {
+      font-size: 1rem;
+   }
+
+   h2 {
+      font-size: .8rem;
+   }
+}

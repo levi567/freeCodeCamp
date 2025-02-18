@@ -1,0 +1,888 @@
+:root {
+   --theme-color: #ff0000;
+}
+
+*, ::before, ::after {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   scroll-behavior: smooth;
+}
+
+html {
+   font-size: 62.5%;
+}
+
+body {
+   width: 100vw;
+   font-family: poppins, sans-serif;
+   background-color: #f0f0f0;
+   overflow-x: hidden;
+}
+
+/* Header + Navigation */
+
+.nav-link {
+   color: #fff;
+   font-size: 2rem;
+   text-decoration: none;
+}
+
+.nav-link:hover {
+   color: rgba(255, 255, 255, .5);
+   cursor: pointer;
+}
+
+#header {
+   background: linear-gradient( #000 65%, #313131);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-bottom: 1px solid var(--theme-color);
+   width: 100%;
+   z-index: 999;
+}
+
+#logo {
+   display: flex;
+   height: 80px;
+}
+
+#logo #logo-text hr {
+   border: solid 1.65px var(--theme-color);
+}
+
+#header-img {
+   padding: 12px 8px 12px 12px;
+}
+
+#logo-text {
+   color: #fff;
+   font-size: 1.5rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+#nav-bar ul {
+   height: 100%;
+   width: 500px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   padding-right: 100px;
+}
+
+/* Hero */
+
+#hero-heading, #hero-subheading {
+   color: #fff;
+}
+
+#hero-heading {
+   position: relative;
+   font-size: 5rem;
+   text-align: center;
+   width: 100%;
+   z-index: 999;
+   padding-top: 100px;
+}
+
+#hero-subheading {
+   position: relative;
+   font-size: 2.5rem;
+   text-align: center;
+   width: 100%;
+   z-index: 999;
+   margin-bottom: 60px;
+}
+
+#hero {
+   background: url("https://res.cloudinary.com/dgfuhwcs0/image/upload/f_auto,q_auto/wplxrmx6ljr5la636jtt") center/cover no-repeat rgba(0, 0, 0, .5);
+   height: 100vh;
+   color: #fff;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#hero::before {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, .5);
+   z-index: 1;
+}
+
+#video {
+   width: 50%;
+   aspect-ratio: 16/9;
+   z-index: 999;
+   margin-bottom: 50px;
+}
+
+#call-to-action {
+   background: linear-gradient(90deg, var(--theme-color), #660000);
+   width: 300px;
+   height: 75px;
+   border-radius: 50px;
+   border: none;
+   font-size: 2.5rem;
+   font-weight: 800;
+   z-index: 999;
+   position: relative;
+}
+
+#call-to-action:hover {
+   cursor: pointer;
+   background: linear-gradient(var(--theme-color), #660000);
+   transition: ease-in 5000ms;
+}
+
+/* Features */
+
+#features {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-size: 3rem;
+   margin-top: 100px;
+   height: 40vh;
+}
+
+.feature {
+   height: 350px;
+   width: 1000px;
+   border-radius: 50px;
+   padding: 40px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: -150px;
+}
+
+.feature-heading {
+   display: flex;
+   align-items: center;
+   max-width: 100%;
+}
+
+.feature-title {
+   font-size: 3rem;
+}
+
+.feature-subtitle {
+   text-align: start;
+   font-size: 2.3rem;
+   max-width: 100%;
+   width: 400px;
+}
+
+.fa-clock, .fa-dumbbell, .fa-utensils {
+   margin-right: 20px;
+}
+
+/* Pricing */
+
+#pricing {
+   background-color: #ffffff90;
+   padding: 150px;
+}
+
+#pricing-title {
+   font-size: 4rem;
+   text-align: center;
+}
+
+#pricing-subtitle {
+   font-size: 2rem;
+   text-align: center;
+}
+
+.price {
+   font-weight: bold;
+   font-size: 2.8rem;
+   margin-top: 10px;
+}
+
+#membership {
+   display: flex;
+   justify-content: space-between;
+   width: 1000px;
+   margin: 50px auto;
+}
+
+.tier {
+   border: 1px solid var(--theme-color);
+   padding: 25px;
+   border-radius: 80px;
+   width: 300px;
+   height: 500px;
+   margin-top: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.tier-title {
+   text-align: center;
+   font-size: 3rem;
+}
+
+.feature-list {
+   list-style: none; 
+   font-size: 1.8rem;
+   text-align: center;
+   line-height: 40px;
+   margin-top: 20px;
+   height: 100%;
+}
+
+.tier-button {
+   width: 150px;
+   height: 100px;
+   font-size: 2.2rem;
+   background-color: var(--theme-color);
+   color: #fff;   
+   border: 3px solid rgba(255, 255, 255, .5);
+   border-radius: 5px;
+}
+
+.tier-button:hover {
+   transition: ease-in 500ms;
+   background-color: rgba(255, 0, 0, .65);
+}
+
+/* Footer */
+
+#footer {
+   background-color: #660000;
+   padding: 30px;
+}
+
+#form {
+   background-color: var(--theme-color);
+   width: 30%;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column; 
+   padding: 15px;   
+   border-radius: 10px;
+}
+
+.form-input {
+   background-color: #fff;
+   width: 50%;
+   height: 50px;
+   margin: 10px auto;
+   border-radius: 10px;
+   font-size: 2rem;
+   border: none;
+}
+
+.form-input::placeholder, #submit {
+   padding: 10px;
+}
+
+#submit {
+   background-color: #660000;
+   color: #fff;
+   border-radius: 10px;
+   font-size: 1.5rem;
+   border: none;
+}
+
+#submit:hover {
+   transition: ease-in 500ms;
+   background-color: rgba(102, 0, 0, .65);
+}
+
+/* Responsive Styles */
+
+@media only screen and (max-width: 400px) {
+   html {
+      font-size: 30%;
+   }
+
+   /* Header + Navigation */
+
+   #logo {
+      height: 50px;
+   }
+
+   #nav-bar ul {
+      width: 180px;
+      padding-right: 30px;
+   }
+
+   /* Hero */
+
+   #video {
+      display: none;
+   }
+
+   #hero {
+      height: 50vh;
+   }
+
+   #hero::before {
+      height: 50vh;
+   }
+
+   #call-to-action {
+      width: 35vw;
+      height: 8vh;
+   }
+
+   /* Features */
+
+   #features {
+      margin-top: 20vh;
+      padding: 10px;
+   }
+
+   .feature {
+      width: 90%;
+   }
+
+   .feature-subtitle {
+      width: 50%;
+   }
+
+   .fa-clock, .fa-dumbbell, .fa-utensils {
+      margin-right: 2vw;
+   }
+
+   /* Pricing */
+
+   .tier {
+      padding: 25px;
+      width: 75%;
+      height: 52vh;
+      margin-top: 20px;
+   }
+
+   .tier-button {
+      width: 20vw;
+      height: 7vh;
+   }
+
+   .feature-list {
+      line-height: 40px;
+      margin-top: 20px;
+   }
+
+   #pricing {
+      padding: 50px;
+   }
+
+   #membership {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+   }
+
+   #pricing-subtitle {
+      margin-bottom: -50px;
+   }
+
+   /* Footer */
+   #form {
+      width: 80%;
+      padding: 10px;
+   }
+
+   #submit {
+      width: 30%;
+      height: 5%;
+   }
+
+   .form-input {
+      margin: 5px auto;
+      height: 30px;
+   }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+
+   html {
+      font-size: 35%;
+   }
+
+   /* Header + Navigation */
+
+   #logo {
+      height: 50px;
+   }
+
+   #nav-bar ul {
+      width: 200px;
+      padding-right: 30px;
+   }
+
+   /* Hero */
+
+   #video {
+      display: none;
+   }
+
+   #hero {
+      height: 50vh;
+   }
+
+   #hero::before {
+      height: 50vh;
+   }
+
+   #call-to-action {
+      width: 25vw;
+      height: 8vh;
+   }
+
+   /* Features */
+
+   #features {
+      margin-top: 20vh;
+      padding: 10px;
+   }
+
+   .feature {
+      width: 90%;
+   }
+
+   .feature-subtitle {
+      width: 50%;
+   }
+
+   .fa-clock, .fa-dumbbell, .fa-utensils {
+      margin-right: 2vw;
+   }
+
+   /* Pricing */
+
+   .tier {
+      padding: 25px;
+      width: 75%;
+      height: 55vh;
+      margin-top: 20px;
+   }
+
+   .tier-button {
+      width: 20vw;
+      height: 7vh;
+   }
+
+   .feature-list {
+      line-height: 40px;
+      margin-top: 20px;
+   }
+
+   #pricing {
+      padding: 50px;
+   }
+
+   #membership {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+   }
+
+   #pricing-subtitle {
+      margin-bottom: -50px;
+   }
+
+   /* Footer */
+   #form {
+      width: 80%;
+      padding: 10px;
+   }
+
+   #submit {
+      width: 30%;
+      height: 5%;
+   }
+
+   .form-input {
+      margin: 5px auto;
+      height: 30px;
+   }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+   html {
+      font-size: 40%;
+   }
+
+   /* Header + Navigation */
+
+   #logo {
+      height: 50px;
+   }
+
+   #nav-bar ul {
+      width: 250px;
+      padding-right: 30px;
+   }
+
+   /* Hero */
+
+   #hero {
+      height: 90vh;
+   }
+
+   #hero::before {
+      height: 90vh;
+   }
+
+   #call-to-action {
+      width: 20vw;
+      height: 8vh;
+   }
+
+   /* Features */
+
+   #features {
+      margin-top: 20vh;
+   }
+
+   .feature {
+      width: 100%;
+   }
+
+   .feature-subtitle {
+      width: 50%;
+   }
+
+   .fa-clock, .fa-dumbbell, .fa-utensils {
+      margin-right: 2vw;
+   }
+
+   /* Pricing */
+
+   .tier {
+      padding: 25px;
+      width: 50%;
+      height: 400px;
+      margin-top: 20px;
+   }
+
+   .tier-button {
+      width: 20vw;
+      height: 7vh;
+   }
+
+   .feature-list {
+      line-height: 40px;
+      margin-top: 20px;
+   }
+
+   #pricing {
+      padding: 50px;
+   }
+
+   #membership {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+   }
+
+   #pricing-subtitle {
+      margin-bottom: -50px;
+   }
+
+   /* Footer */
+   #form {
+      width: 50%;
+      padding: 10px;
+   }
+
+   #submit {
+      width: 30%;
+      height: 5%;
+   }
+
+   .form-input {
+      margin: 5px auto;
+      height: 30px;
+   }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+   html {
+      font-size: 45%;
+   }
+
+   /* Header + Navigation */
+
+   #logo {
+      height: 50px;
+   }
+
+   #nav-bar ul {
+      width: 250px;
+      padding-right: 30px;
+   }
+
+   /* Hero */
+
+   #hero {
+      height: 95vh;
+   }
+
+   #hero::before {
+      height: 95vh;
+   }
+
+   #call-to-action {
+      width: 20vw;
+      height: 8vh;
+   }
+
+   /* Features */
+
+   #features {
+      margin-top: 20vh;
+   }
+
+   .feature {
+      width: 100%;
+   }
+
+   .feature-subtitle {
+      width: 50%;
+   }
+
+   .fa-clock, .fa-dumbbell, .fa-utensils {
+      margin-right: 2vw;
+   }
+
+   /* Pricing */
+
+   .tier {
+      padding: 25px;
+      width: 31%;
+      height: 400px;
+      margin-top: 20px;
+   }
+
+   .tier-button {
+      width: 15vw;
+      height: 7vh;
+   }
+
+   .feature-list {
+      line-height: 40px;
+      margin-top: 20px;
+   }
+
+   #pricing {
+      padding: 50px;
+   }
+
+   #membership {
+      width: 100%;
+      align-items: center;
+   }
+
+   #pricing-subtitle {
+      margin-bottom: -50px;
+   }
+
+   /* Footer */
+   #form {
+      width: 50%;
+      padding: 10px;
+   }
+
+   #submit {
+      width: 30%;
+      height: 5%;
+   }
+
+   .form-input {
+      margin: 5px auto;
+      height: 30px;
+   }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1199px) {
+   html {
+      font-size: 50%;
+   }
+
+   /* Header + Navigation */
+
+   #logo {
+      height: 50px;
+   }
+
+   #nav-bar ul {
+      width: 300px;
+      padding-right: 30px;
+   }
+
+   /* Hero */
+
+   #call-to-action {
+      width: 20vw;
+      height: 8vh;
+   }
+
+   /* Features */
+
+   #features {
+      margin-top: 20vh;
+   }
+
+   .feature {
+      width: 100%;
+   }
+
+   .feature-subtitle {
+      width: 50%;
+   }
+
+   .fa-clock, .fa-dumbbell, .fa-utensils {
+      margin-right: 2vw;
+   }
+
+   /* Pricing */
+
+   .tier {
+      padding: 25px;
+      width: 28%;
+      height: 400px;
+      margin-top: 20px;
+   }
+
+   .tier-button {
+      width: 15vw;
+      height: 7vh;
+   }
+
+   .feature-list {
+      line-height: 40px;
+      margin-top: 20px;
+   }
+
+   #pricing {
+      padding: 50px;
+   }
+
+   #membership {
+      width: 100%;
+      align-items: center;
+   }
+
+   #pricing-subtitle {
+      margin-bottom: -50px;
+   }
+
+   /* Footer */
+   #form {
+      width: 50%;
+      padding: 10px;
+   }
+
+   #submit {
+      width: 30%;
+      height: 5%;
+   }
+
+   .form-input {
+      margin: 5px auto;
+      height: 30px;
+   }
+}
+
+@media only screen and (min-width: 1199px) and (max-width: 1460px){
+   html {
+      font-size: 55%;
+   }
+
+   /* Header + Navigation */
+
+   #logo {
+      height: 50px;
+   }
+
+   #nav-bar ul {
+      width: 300px;
+      padding-right: 30px;
+   }
+
+   /* Hero */
+
+   #call-to-action {
+      width: 20vw;
+      height: 8vh;
+   }
+
+   /* Features */
+
+   #features {
+      margin-top: 20vh;
+   }
+
+   .feature {
+      width: 80%;
+   }
+
+   .feature-subtitle {
+      width: 50%;
+   }
+
+   .fa-clock, .fa-dumbbell, .fa-utensils {
+      margin-right: 2vw;
+   }
+
+   /* Pricing */
+
+   .tier {
+      padding: 25px;
+      width: 25%;
+      height: 400px;
+      margin-top: 20px;
+   }
+
+   .tier-button {
+      width: 15vw;
+      height: 7vh;
+   }
+
+   .feature-list {
+      line-height: 40px;
+      margin-top: 20px;
+   }
+
+   #pricing {
+      padding: 50px;
+   }
+
+   #membership {
+      width: 100%;
+      align-items: center;
+   }
+
+   #pricing-subtitle {
+      margin-bottom: -50px;
+   }
+
+   /* Footer */
+   #form {
+      width: 50%;
+      padding: 10px;
+   }
+
+   #submit {
+      width: 30%;
+      height: 5%;
+   }
+
+   .form-input {
+      margin: 5px auto;
+      height: 30px;
+   }
+}
