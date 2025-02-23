@@ -101,6 +101,7 @@ header {
 
 #subtitle {
    font-size: 2rem;
+   color: var(--theme-color-darkest)
 }
 
 /* Projects Section */
