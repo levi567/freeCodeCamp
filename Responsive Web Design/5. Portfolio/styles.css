@@ -223,16 +223,16 @@ header {
    justify-content: space-around;
    align-items: center;
    padding: 0 300px;
+   overflow: hidden;
 }
 
-#footer-link {
+.footer-link {
    text-decoration: none;
    font-size: 1.2rem;
    color: var(--text-color);
-   padding: 50px;
 }
 
-#footer-link:hover {
+.footer-link:hover {
    animation: 900ms footer-animation ease-in-out forwards;
 }
 
