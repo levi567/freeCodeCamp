@@ -233,19 +233,11 @@ header {
 }
 
 #footer-link:hover {
-   animation: 1250ms footer-animation ease-in-out forwards;
+   animation: 900ms footer-animation ease-in-out forwards;
 }
 
 @keyframes footer-animation {
-   0% {
-      transform: translate(-25px, -25px);
-   }
-
-   50% {
-      transform: translate(-15px, -15px) rotate(90deg);
-   }
-
    100% {
-      transform: translateY(20px) rotate(360deg);
+      transform: translateY(35px) rotate(360deg);
    }
 }
