@@ -305,7 +305,6 @@ body {
    }
 
    #navbar {
-      max-width: 400px;
       flex-direction: column;
       align-items: flex-end;
       background: linear-gradient(90deg, var(--theme-color-darkest), var(--theme-color-darker) 75%);
@@ -350,6 +349,23 @@ body {
       max-height: 240px;
    }
 
+   #menu-btn:checked ~ #menu-icon #nav-icon::before {
+      animation: menu-1 0ms ease-in-out;
+      transform: rotate(45deg) translate(15px, 15px);
+      position: absolute;
+   }
+
+   #menu-btn:checked ~ #menu-icon #nav-icon {
+      background: transparent;
+      animation: menu-3 0ms ease-out;
+   }
+
+   #menu-btn:checked ~ #menu-icon #nav-icon::after {
+      animation: menu-2 0ms ease-in-out;
+      transform: rotate(-45deg);
+      position: absolute;
+   }
+
    #nav-icon {
       background-color: var(--text-color);
       display: block;
@@ -378,6 +394,24 @@ body {
 
    #nav-icon::after {
       top: 10px;
+   }
+
+   @keyframes menu-1 {
+      100% {
+         transform: rotate(45deg) translate(15px, 15px);
+      }
+   }
+
+   @keyframes menu-2 {
+      100% {
+         transform: rotate(-45deg);
+      }
+   }
+
+   @keyframes menu-3 {
+      100% {
+         background: transparent;
+      }
    }
 
    /* Welcome Section */
@@ -496,6 +530,206 @@ body {
 
    @media only screen and (min-width: 401px) and (max-width: 600px) {
 
+      /* Basic Styles */
+      html {
+         font-size: 60%;
+      }
+
+      /* Navigation */
+
+      #menu-btn, #menu-icon {
+         visibility: visible;
+      }
+
+      #navbar {
+         flex-direction: column;
+         align-items: flex-start;
+         background: linear-gradient(90deg, var(--theme-color-darkest), var(--theme-color-darker) 75%);
+      }
+
+      #menu {
+         flex-direction: column;
+         width: 100%;
+         align-items: flex-start;
+         overflow: hidden;
+         margin: 0;
+         padding: 0;
+         max-height: 0;
+         transition: max-height .2s ease-out;
+         position: relative;
+         top: 30px;
+      }
+
+      .navlink {
+         display: block;
+         border-radius: 1px;
+         padding: 20px;
+         font-size: 2rem;
+         width: 100vw;
+      }
+
+      .navlink:hover {
+         border: unset;
+         transition: unset;
+         animation: unset;
+      }
+
+      #menu-icon {
+         padding: 0 20px;
+         margin-right: 20px;
+         position: relative;
+      }
+
+      #menu-btn {
+         display: none;
+      }
+
+      #menu-btn:checked ~ #menu {
+         max-height: 240px;
+      }
+
+      #nav-icon {
+         background-color: var(--text-color);
+         display: block;
+         width: 25px;
+         height: 2px;
+         position: relative;
+         border-radius: 50%;
+         transition: background .2s ease-out;
+      }
+
+      #nav-icon::before, #nav-icon::after {
+         content: "";
+         background-color: var(--text-color);
+         display: block;
+         width: 100%;
+         height: 100%;
+         position: absolute;
+         bottom: 10px;
+         border-radius: 50%;
+         transition: all .2s ease-out;
+      }
+
+      #nav-icon::before {
+         bottom: 10px;
+      }
+
+      #nav-icon::after {
+         top: 10px;
+      }
+
+      /* Welcome Section */
+
+      #welcome-section {
+         height: 50vh;
+      }
+
+      #welcome {
+         width: 75%;
+         height: 55%;
+      }
+
+      #welcome:hover {
+         box-shadow: unset;
+         background: linear-gradient(90deg, var(--theme-color-dark), var(--theme-color-light) 90%);
+      }
+
+      #title {
+         font-size: 4rem;
+      }
+
+      #subtitle {
+         font-size: 2rem;
+      }
+
+      /* Projects Section */
+
+      .project-tile {
+         width: 65%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+
+      .project-tile:hover {
+         animation: unset;
+         box-shadow: unset;
+      }
+
+      .project-title {
+         font-size: 1.5rem;
+         padding: 15px 0;
+      }
+
+      #project-tiles, #projects-title {
+         width: 85%;
+      }
+
+      #projects-title {
+         font-size: 2.75rem;
+      }
+
+
+      #project-tiles {
+         display: flex;
+         flex-direction: column;
+      }
+
+      #github button {
+         width: 50%;
+      }
+
+      #github button:hover {
+         box-shadow: unset;
+      }
+
+      /* Footer */
+      .fa-brands, .fa-regular, .fa-solid {
+         padding: 20px 10px 0 0;
+      }
+
+      #footer {
+         display: grid;
+         grid-template-rows: 1fr;
+         padding: 0;
+         overflow: hidden;
+         padding-bottom: 10px;
+      }
+
+      .footer-link:first-child {
+         grid-column: 1 / 2;
+         grid-row: 1 / 3;
+      }
+
+      .footer-link:nth-child(2) {
+         grid-column: 1 / 2;
+         grid-row: 2 / 3;
+      }
+
+      .footer-link:nth-child(3) {
+         grid-column: 1 / 2;
+         grid-row: 3 / 3;
+      }
+
+      .footer-link:nth-child(4) {
+         grid-column: 2 / 2;
+         grid-row: 2 / 3;
+      }
+
+      .footer-link:last-child {
+         grid-column: 2 / 2;
+         grid-row: 3 / 3;
+      }
+
+      .footer-link {
+         font-size: 1.5rem;
+         color: var(--text-color);
+         padding: 0;
+      }
+
+      .footer-link:hover {
+         animation: unset;
+      }
    }
 
    @media only screen and (min-width: 601px) and (max-width: 767px) {
@@ -513,4 +747,3 @@ body {
    @media only screen and (min-width: 1200px) {
 
    }
-}
