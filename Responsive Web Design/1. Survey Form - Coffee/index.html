@@ -13,14 +13,9 @@
       <p id="description"><em>Thank you for taking the time to answer these questions about coffee</em></p>
 
       <form id="survey-form" action="" method="POST">
-        <label id="name-label" for="name">Name</label>
-        <input id="name" type="text" name="name" placeholder="Enter your name" required />
-
-        <label id="email-label" for="email">Email</label>
-        <input id="email" type="email" name="email" placeholder="Enter your email" required />
-
-        <label id="number-label" for="number">Age</label>
-        <input id="number" type="number" name="age" min="13" max="120" placeholder="Age" required />
+        <input id="name" type="text" placeholder="Enter your name" required />
+        <input id="email" type="email" placeholder="Enter your email" required />
+        <input id="number" type="number" min="13" max="120" placeholder="Age" required />
 
         <label for="dropdown"> How did you hear about us?</label>
           <select id="dropdown" name="referrer">
@@ -31,29 +26,30 @@
             <option value="4">Other</option>
           </select>
 
-        <fieldset>
-          <legend>How often do you drink coffee?</legend>
-          <label for="never"><input id="never" type="radio" name="coffee-frequency" value="never" checked> Never</label>
-          <label for="sometimes"><input id="sometimes" type="radio" name="coffee-frequency" value="sometimes"> Sometimes</label>
-          <label for="often"><input id="often" type="radio" name="coffee-frequency" value="often"> Often</label>
-        </fieldset>
+        <div id="fieldset-container">
+          <fieldset>
+            <legend>How often do you drink coffee?</legend>
+            <label for="never"><input id="never" type="radio" name="coffee-frequency" value="never" checked> Never</label>
+            <label for="sometimes"><input id="sometimes" type="radio" name="coffee-frequency" value="sometimes"> Sometimes</label>
+            <label for="often"><input id="often" type="radio" name="coffee-frequency" value="often"> Often</label>
+          </fieldset>
+          <fieldset>
+            <legend>How do you like your coffee?</legend>
+            <label for="black"><input id="black" type="checkbox" name="ways-to-drink-coffee" value="black"> Black</label>
+            <label for="cappuccino"><input id="cappuccino" type="checkbox" name="ways-to-drink-coffee" value="cappuccino"> Cappuccino</label>
+            <label for="latte"><input id="latte" type="checkbox" name="ways-to-drink-coffee" value="latte"> Latte</label>
+            <label for="iced-coffee"><input id="iced-coffee" type="checkbox" name="ways-to-drink-coffee" value="iced-coffee"> Iced Coffee</label>
+            <label for="espresso"><input id="espresso" type="checkbox" name="ways-to-drink-coffee" value="espresso"> Espresso</label>
+            <label for="americano"><input id="americano" type="checkbox" name="ways-to-drink-coffee" value="americano"> Americano</label>
+            <label for="caffè-macchiato"><input id="caffè-macchiato" type="checkbox" name="ways-to-drink-coffee" value="caffè-macchiato"> Caffè Macchiato</label>
+            <label for="cold-brew"><input id="cold-brew" type="checkbox" name="ways-to-drink-coffee" value="cold-brew"> Cold Brew</label>
+            <label for="flat-white"><input id="flat-white" type="checkbox" name="ways-to-drink-coffee" value="flat-white"> Flat White</label>
+            <label for="mocha"><input id="mocha" type="checkbox" name="ways-to-drink-coffee" value="mocha"> Mocha</label>
+            <label for="other"><input id="other" type="checkbox" name="ways-to-drink-coffee" value="other"> Other</label>
+          </fieldset>
+        </div>
 
-        <fieldset>
-          <legend>How do you like your coffee?</legend>
-          <label for="black"><input id="black" type="checkbox" name="ways-to-drink-coffee" value="black"> Black</label>
-          <label for="cappuccino"><input id="cappuccino" type="checkbox" name="ways-to-drink-coffee" value="cappuccino"> Cappuccino</label>
-          <label for="latte"><input id="latte" type="checkbox" name="ways-to-drink-coffee" value="latte"> Latte</label>
-          <label for="iced-coffee"><input id="iced-coffee" type="checkbox" name="ways-to-drink-coffee" value="iced-coffee"> Iced Coffee</label>
-          <label for="espresso"><input id="espresso" type="checkbox" name="ways-to-drink-coffee" value="espresso"> Espresso</label>
-          <label for="americano"><input id="americano" type="checkbox" name="ways-to-drink-coffee" value="americano"> Americano</label>
-          <label for="caffè-macchiato"><input id="caffè-macchiato" type="checkbox" name="ways-to-drink-coffee" value="caffè-macchiato"> Caffè Macchiato</label>
-          <label for="cold-brew"><input id="cold-brew" type="checkbox" name="ways-to-drink-coffee" value="cold-brew"> Cold Brew</label>
-          <label for="flat-white"><input id="flat-white" type="checkbox" name="ways-to-drink-coffee" value="flat-white"> Flat White</label>
-          <label for="mocha"><input id="mocha" type="checkbox" name="ways-to-drink-coffee" value="mocha"> Mocha</label>
-          <label for="other"><input id="other" type="checkbox" name="ways-to-drink-coffee" value="other"> Other</label>
-        </fieldset>
-
-        <label for="comments">Additional thoughts?</label><textarea id="comments" name="comments" placeholder="Write your additional thoughts here..."></textarea>
+        <textarea id="comments" name="comments" placeholder="Write your additional thoughts here..."></textarea>
       <input id="submit" type="submit">
       </form>
     </div>
